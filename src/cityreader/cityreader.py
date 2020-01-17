@@ -35,7 +35,7 @@ def cityreader(cities=[]):
       for line in reader:
         cities.append(City(line["city"], line["lat"], line["lng"]))
     return cities
-
+ 
 cityreader(cities)
 
 # Print the list of cities (name, lat, lon), 1 record per line.
