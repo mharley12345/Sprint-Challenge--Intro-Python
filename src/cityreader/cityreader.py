@@ -31,7 +31,7 @@ def cityreader(cities=[]):
   # `cities` list
     with open('cities.csv', 'r') as csv_file:
       reader = csv.DictReader(csv_file)
-
+# hides header in cities.csv
       for line in reader:
         cities.append(City(line["city"], line["lat"], line["lng"]))
     return cities
