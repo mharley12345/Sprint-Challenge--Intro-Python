@@ -41,7 +41,7 @@ cityreader(cities)
 
 # Print the list of cities (name, lat, lon), 1 record per line.
 for c in cities:
-    print('-------------------------')
+    print('-------------------------------------------')
     print(c)
 
 # STRETCH GOAL!
@@ -106,6 +106,6 @@ lat2 = float(second_input.split(",")[0])
 lon2 = float(second_input.split(",")[1])
 
 for c in cityreader_stretch(lat1,lon1,lat2,lon2,cities):
-  print("-------------------------------------------")
+  print('-------------------------------------------')
   print(f"{c.name},{c.lat},{c.lon}")
 
